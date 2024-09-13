@@ -17,3 +17,5 @@ jobs:
         run: make format
       - name: lint
         run: make lint
+      - name: generate
+        run: make check

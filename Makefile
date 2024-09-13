@@ -7,4 +7,14 @@ format:
 lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
-all: install format lint test
+check: 
+	python main.py 
+	git config --local user.email "action@github.com"; \
+	git config --local user.name "GitHub Action"; \
+	git add . 
+	git commit -m "test"
+	git push 
+
+		
+all: install lint test format deploy
+
