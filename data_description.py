@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # read csv file
-data_set = "https://data.cdc.gov/api/views/95ax-ymtc/rows.csv?accessType=DOWNLOAD"
 
 
 def load_dataset(dataset):
+    dataset = "https://data.cdc.gov/api/views/95ax-ymtc/rows.csv?accessType=DOWNLOAD"
     data_set = pd.read_csv(dataset)
     data = data_set[
         (data_set["STUB_NAME"] == "Total")
@@ -53,8 +53,4 @@ def create_graph(data):
     plt.show()
 
 
-data = load_dataset(data_set)
-print(create_mean(data))
-print(create_median(data))
-print(create_std(data))
 # print(create_graph(data))
