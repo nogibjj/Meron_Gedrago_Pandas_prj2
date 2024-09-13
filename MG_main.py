@@ -1,4 +1,4 @@
-from data_description import load_dataset
+from data_description import *
 
 
 def data_describe():
