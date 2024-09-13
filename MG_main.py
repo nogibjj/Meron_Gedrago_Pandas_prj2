@@ -1,4 +1,4 @@
-from data_description import *
+from data_description import load_dataset
 
 data_set = "https://data.cdc.gov/api/views/95ax-ymtc/rows.csv?accessType=DOWNLOAD"
 
