@@ -4,7 +4,7 @@ data_set = "https://data.cdc.gov/api/views/95ax-ymtc/rows.csv?accessType=DOWNLOA
 
 
 def data_describe():
-    data = load_dataset(data_set)
+    data = load_dataset()
     return data.describe()
 
 
