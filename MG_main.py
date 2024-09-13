@@ -12,4 +12,4 @@ def save_to_mk():
 
 
 if __name__ == "__main__":
-    print(data_describe())
+    save_to_mk()
